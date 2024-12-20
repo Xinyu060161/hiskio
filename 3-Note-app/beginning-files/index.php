@@ -1,3 +1,11 @@
+<?php
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+echo "1";
+include "3-Note-app/beginning-files/connettiion.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
