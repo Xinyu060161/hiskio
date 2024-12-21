@@ -2,6 +2,7 @@
 echo "1";
 include "./connection.php";
 echo "2";
+$connection = new connection();
 ?>
 
 <!DOCTYPE html>
