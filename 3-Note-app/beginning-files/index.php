@@ -1,6 +1,7 @@
 <?php
 echo "1";
 include "3-Note-app/beginning-files/connettiion.php";
+echo "2";
 ?>
 
 <!DOCTYPE html>
