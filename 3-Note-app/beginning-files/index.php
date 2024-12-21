@@ -1,6 +1,6 @@
 <?php
 echo "1";
-include "3-Note-app/beginning-files/connettiion.php";
+include "3-Note-app/beginning-files/connetiion.php";
 echo "2";
 ?>
 
