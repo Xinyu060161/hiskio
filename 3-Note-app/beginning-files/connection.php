@@ -1,5 +1,5 @@
 <?php
-echo "3";
+echo "1";
 
 class connection
 {
@@ -18,4 +18,5 @@ class connection
     }
 }
 return new connection();
+
 ?>
