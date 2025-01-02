@@ -17,4 +17,5 @@ class connection
         }
     }
 }
+return new connection();
 ?>
