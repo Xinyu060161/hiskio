@@ -22,6 +22,6 @@ class connection
     }
 
 }
-return new connection();
+// return new connection();
 
 ?>
