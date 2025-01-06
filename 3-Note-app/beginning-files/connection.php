@@ -22,7 +22,7 @@ class connection
         $sql     = "SELECT * FROM SQL_test ORDER BY $column DESC";
         $stmt    = $this->pdo->query($sql);
         $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
-        return $results
+        return $results;
     }
 
 }
