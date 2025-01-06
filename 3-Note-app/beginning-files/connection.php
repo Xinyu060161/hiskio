@@ -12,11 +12,15 @@ class connection
             $this->pdo = new PDO('mysql:host=localhost;dbname=HISKio_test2024', 'root', '1');
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             echo 1;
-        } catch (PDOException $e) {
+            } catch (PDOException $e) {
             echo "Connection failed: " . $e->getMessage();
             echo 0;
-        }
+                }
     }
+    public function getNotes(){
+        echo 1;
+    }
+
 }
 return new connection();
 

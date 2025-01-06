@@ -2,6 +2,7 @@
 include "./connection.php";
 
 //$connection = new connection();
+$notes = $connect->getNotes();
 ?>
 
 <!DOCTYPE html>
