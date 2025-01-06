@@ -19,7 +19,7 @@ class connection
     }
     public function getNotes($column)
     {
-        $sql     = "SELECT * FROM SQL_test ORDER BY $column DESC";
+        $sql     = "SELECT * FROM SQL_test ORDER BY $column ASC";
         $stmt    = $this->pdo->query($sql);
         $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
         return $results;
