@@ -17,9 +17,12 @@ class connection
             echo 0;
                 }
     }
-    public function getNotes()
+    public function getNotes($column)
     {
-        return 2;
+        $sql     = "SELECT * FROM SQL_test ORDER BY $column DESC";
+        $stmt    = $this->pdo->query($sql);
+        $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
+        return $results
     }
 
 }
