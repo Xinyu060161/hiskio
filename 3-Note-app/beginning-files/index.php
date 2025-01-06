@@ -2,7 +2,7 @@
 include "./connection.php";
 
 //$connection = new connection();
-$notes = $connect->getNotes();
+$notes = new getNotes();
 echo $notes;
 ?>
 
