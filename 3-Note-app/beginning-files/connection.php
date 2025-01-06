@@ -9,7 +9,7 @@ class connection
         echo "test";
         // 假設這裡創建了一個 PDO 實例
         try {
-            $this->pdo = new PDO('mysql:host=localhost;dbname=HISKio_test2024', 'root', '1');
+            $this->pdo = new PDO('mysql:host=localhost;dbname=HISKio_test2024', 'root', '');
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             echo 1;
             } catch (PDOException $e) {
