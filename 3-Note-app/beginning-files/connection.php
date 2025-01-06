@@ -17,7 +17,8 @@ class connection
             echo 0;
                 }
     }
-    public function getNotes(){
+    public function getNotes()
+    {
         return 2;
     }
 

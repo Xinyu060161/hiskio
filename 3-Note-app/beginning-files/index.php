@@ -1,8 +1,8 @@
 <?php
 include "./connection.php";
 
-//$connection = new connection();
-$notes = new getNotes();
+$connection = new connection();
+$notes = $connection->getNotes();
 echo $notes;
 ?>
 
