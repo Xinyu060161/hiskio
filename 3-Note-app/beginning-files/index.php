@@ -3,6 +3,7 @@ include "./connection.php";
 
 //$connection = new connection();
 $notes = $connect->getNotes();
+echo $notes;
 ?>
 
 <!DOCTYPE html>
