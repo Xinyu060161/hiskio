@@ -9,7 +9,7 @@ include "./connection.php";
 
 $connection = new connection();
 $notes = $connection->getNotes("id");
-print_r($notes);
+echo '<pre>',print_r($notes),'<pre>';
 ?>
 
 <!DOCTYPE html>
