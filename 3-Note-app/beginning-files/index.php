@@ -47,6 +47,23 @@ echo '<pre>',print_r($notes),'<pre>';
             </form>
         </div>
     </div>
-</div>
+
+    
+    <div class="notes">
+        <div class="note">
+            <div class="title">
+                <a href="#">This is post title</a>
+            </div>
+            <div class="description">
+              This is description
+            </div>
+            <small>2021-05-31</small>
+            <form action="delete.php" method="post">
+              <input type="hidden" name="id" value="">
+            <button class="close">X</button>
+            </form>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
