@@ -36,7 +36,7 @@ echo '<pre>',print_r($notes),'<pre>';
 
 
     <div class="notes">
-      <? foreach( $notes as $notes ):?>
+      <? foreach( $notes as $ntes ):?>
       <div class="note">
         <div class="title">           
                 <a href="#"><?=$notes['title'];?></a>
