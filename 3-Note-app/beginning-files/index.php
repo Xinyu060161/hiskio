@@ -15,6 +15,7 @@ echo '<pre>',print_r($notes),'<pre>';
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -35,15 +36,17 @@ echo '<pre>',print_r($notes),'<pre>';
     <div class="notes">
         <div class="note">
             <div class="title">
-                <a href="#">This is post title</a>
+            <?foreach($note as $notes){?>
+                <a href="#"><?$notes['title']?></a>
             </div>
             <div class="description">
-              This is description
+              <?$note['description']?>
             </div>
-            <small>2021-05-31</small>
+            <small><?$notes['created_date']?></small>
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
+            <?}?>
             </form>
         </div>
     </div>

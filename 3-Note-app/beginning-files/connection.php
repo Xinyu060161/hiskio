@@ -15,7 +15,7 @@ class connection
             } catch (PDOException $e) {
             echo "Connection failed: " . $e->getMessage();
             echo 0;
-                }
+            }
     }
     public function getNotes($column)
     {
