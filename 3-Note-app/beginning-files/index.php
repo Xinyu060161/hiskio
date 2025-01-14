@@ -1,14 +1,13 @@
 <?php
 // 啟用所有錯誤顯示
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
-// include "./connection.php";
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+include "./connection.php";
 
-// $connection = new connection();
-// $notes = $connection->getNotes("id");
-// print_r($notes);
-
+$connection = new connection();
+$notes = $connection->getNotes();
+print_r($notes);
 ?>
 
 <!DOCTYPE html>
@@ -31,23 +30,20 @@
           New Note
         </button>
     </form>
-
     <div class="notes">
-        <?php foreach($notes as $note): ?>
         <div class="note">
             <div class="title">
-                <a href="?id=<?php echo $note['id']; ?>"><?php echo $note['title']; ?></a>
+                <a href="#">This is post title</a>
             </div>
             <div class="description">
-              <?php echo $note['description']; ?>
+              This is description
             </div>
-            <small><?php echo $note['created_date']; ?></small>
+            <small>2021-05-31</small>
             <form action="delete.php" method="post">
-              <input type="hidden" name="id" value="<?php echo $note['id']; ?>">
+              <input type="hidden" name="id" value="">
             <button class="close">X</button>
             </form>
         </div>
-        <?php endforeach; ?>
     </div>
 </div>
 </body>
