@@ -45,7 +45,7 @@ print_r($notes);
             <button class="close">X</button>
           </form>
           </div>
-          <?//php endforeach; ?>  
+          <? endforeach; ?>  
 
     <div class="notes">
         <?php foreach($notes as $a): ?>
