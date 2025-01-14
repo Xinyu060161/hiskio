@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 include "./connection.php";
 
 $connection = new connection();
-$notes = $connection->getNotes("id");
+$ASD = $connection->getNotes("id");
 print_r($notes);
 ?>
 
@@ -31,7 +31,7 @@ print_r($notes);
         </button>
     </form>
     <div class="notes">
-      <?foreach($notes as $b): ?>
+      <? foreach($ASD as $b): ?>
         <div class="note">
             <div class="title">
               <a><?echo $b['title'];?></a>
