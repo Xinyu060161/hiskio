@@ -8,6 +8,7 @@ include "./connection.php";
 $connection = new connection();
 $notes = $connection->getNotes("id");
 print_r($notes);
+
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@ print_r($notes);
       <?forech( $notes as $note ):?>
         <div class="note">
             <div class="title">
-                <a href="#"><?$note['title'];?></a>
+                <a href="#"><?$notes['title'];?></a>
             </div>
             <div class="description">
               This is description
