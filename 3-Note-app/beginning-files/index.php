@@ -35,13 +35,8 @@ echo '<pre>',print_r($notes),'<pre>';
     </form>
     <div class="notes">
         <div class="note">
-            <div class="title">
-            <?
-            
-            $connection = new connection();
-            $notes = $connection->getNotes("id");
-
-            foreach($notes as $nts);
+            <div class="title">           
+              <?foreach($notes as $nts);
             {?>
               <?print_r($notes);?>
                 <a href="#"><?echo $nts['title'];?></a>
