@@ -10,7 +10,6 @@ include "./connection.php";
 $connection = new connection();
 $notes = $connection->getNotes("id");
 echo '<pre>',print_r($notes),'<pre>';
-echo '<pre>',print_r($notes),'<pre>';
 ?>
 
 <!DOCTYPE html>
@@ -38,9 +37,7 @@ echo '<pre>',print_r($notes),'<pre>';
         <div class="note">
             <div class="title">           
               <?foreach($notes as $nts){?>
-              <?if (empty($nts)) {
-                echo "No notes found!";
-                };?>
+                <?print_r($nts);?>
                 <a href="#"><?echo $nts['title'];?></a>
             </div>
             <div class="description">
