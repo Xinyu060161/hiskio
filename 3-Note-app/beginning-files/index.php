@@ -33,23 +33,21 @@
     </form>
 
     <div class="notes">
-    <?$connection = new connection();
-    $notes = $connection->getNotes("id");?>
-    <?print_r($notes);?>
-      <?forech( $notes as $note ):?>
+        <?php foreach($notes as $note): ?>
         <div class="note">
             <div class="title">
-                <a href="#"><?$notes['title'];?></a>
+                <a href="?id=<?php echo $note['id']; ?>"><?php echo $note['title']; ?></a>
             </div>
             <div class="description">
-              This is description
+              <?php echo $note['description']; ?>
             </div>
-            <small>2021-05-31</small>
+            <small><?php echo $note['created_date']; ?></small>
             <form action="delete.php" method="post">
-              <input type="hidden" name="id" value="">
+              <input type="hidden" name="id" value="<?php echo $note['id']; ?>">
             <button class="close">X</button>
             </form>
         </div>
+        <?php endforeach; ?>
     </div>
 </div>
 </body>
