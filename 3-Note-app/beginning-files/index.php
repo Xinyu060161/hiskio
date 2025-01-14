@@ -34,7 +34,7 @@ print_r($notes);
       <?foreach($notes as $b): ?>
         <div class="note">
             <div class="title">
-              <a href='#'><?php echo $b['title']; ?></a>
+              <a><?echo $b['title'];?></a>
             </div>
             <div class="description">
               <? echo $b['description'];?>
