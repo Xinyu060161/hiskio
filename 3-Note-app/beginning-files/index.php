@@ -34,12 +34,12 @@ print_r($notes);
       <?foreach($notes as $T1):?>
         <div class="note">
             <div class="title">
-                <a href="#"><?$T1['title']?> </a>
+            <a href="?id=<?php echo $note['id']; ?>"><?php echo $note['title']; ?></a>
             </div>
             <div class="description">
-              <?$ echo $T1['description']?>
+              <? echo $T1['description'];?>
             </div>
-            <small><?$T1['created_date']</small?>
+            <small><? $T1['created_date']?> </small
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
