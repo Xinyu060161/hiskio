@@ -43,9 +43,9 @@ print_r($notes);
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
-            </form>
-        </div>
-    </div>
+          </form>
+          </div>
+    
 
     <div class="notes">
         <?php foreach($notes as $a): ?>
