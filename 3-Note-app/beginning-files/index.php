@@ -10,6 +10,7 @@ include "./connection.php";
 $connection = new connection();
 $notes = $connection->getNotes("id");
 echo '<pre>',print_r($notes),'<pre>';
+echo '<pre>',print_r($notes),'<pre>';
 ?>
 
 <!DOCTYPE html>
