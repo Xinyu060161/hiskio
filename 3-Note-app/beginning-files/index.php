@@ -37,12 +37,14 @@ echo '<pre>',print_r($notes),'<pre>';
     <?php foreach($notes as $note): ?>
       <div class="note">
         <div class="title">           
+                <?echo 0;
+                  print_r($note);?>
                 <a href="#"><?=$note['title'];?></a>
             </div>
             <div class="description">
-              <?$nts['description']?>
+              <?$note['description'];?>
             </div>
-            <small><?$note['created_date']?></small>
+            <small><?$note['created_date'];?></small>
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
