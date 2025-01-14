@@ -1,13 +1,13 @@
 <?php
 // 啟用所有錯誤顯示
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-include "./connection.php";
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+// include "./connection.php";
 
-$connection = new connection();
-$notes = $connection->getNotes("id");
-print_r($notes);
+// $connection = new connection();
+// $notes = $connection->getNotes("id");
+// print_r($notes);
 
 ?>
 
@@ -33,6 +33,9 @@ print_r($notes);
     </form>
 
     <div class="notes">
+    <?$connection = new connection();
+    $notes = $connection->getNotes("id");?>
+    <?print_r($notes);?>
       <?forech( $notes as $note ):?>
         <div class="note">
             <div class="title">
