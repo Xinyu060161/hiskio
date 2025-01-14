@@ -1,9 +1,9 @@
 <?php
 
 // 開啟錯誤顯示
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 include "./connection.php";
 
@@ -51,7 +51,7 @@ echo '<pre>',print_r($notes),'<pre>';
           </form>
         </div>
     </div>
-
+    
     
     <div class="notes">
         <div class="note">
@@ -68,7 +68,7 @@ echo '<pre>',print_r($notes),'<pre>';
             </form>
         </div>
     </div>
-    <?php endforeach; ?>
+    
 
     <div class="notes">
         <?php foreach($notes as $note): ?>
