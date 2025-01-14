@@ -39,8 +39,6 @@ echo '<pre>',print_r($notes),'<pre>';
       <? foreach( $notes as $notes ):?>
       <div class="note">
         <div class="title">           
-                <?echo 0;
-                  print_r($nts);?>
                 <a href="#"><?=$nts['title'];?></a>
             </div>
             <div class="description">
