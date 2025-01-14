@@ -34,12 +34,12 @@ echo '<pre>',print_r($notes),'<pre>';
         </button>
     </form>
     <div class="notes">
-      <? foreach($notes as $nts){?>
+      <? foreach($notes as $nts){ ?>
       <div class="note">
         <div class="title">           
                 <?echo 0;
                   print_r($nts);?>
-                <a href="#"><?echo $nts['title'];?></a>
+                <a href="#"><?=$nts['title'];?></a>
             </div>
             <div class="description">
               <?$nts['description']?>
