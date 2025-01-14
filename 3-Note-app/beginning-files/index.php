@@ -1,21 +1,14 @@
 <?php
-
-// 開啟錯誤顯示
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 include "./connection.php";
 
 $connection = new connection();
-$notes = $connection->getNotes("id");
-echo '<pre>',print_r($notes),'<pre>';
+$notes = $connection getNotes();
+print_r($notes);
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -33,45 +26,21 @@ echo '<pre>',print_r($notes),'<pre>';
           New Note
         </button>
     </form>
-
-
     <div class="notes">
-      <? foreach( $notes as $ntes ):?>
-      <div class="note">
-        <div class="title">           
-                <a href="#"><?=$notes['title'];?></a>
+        <div class="note">
+            <div class="title">
+                <a href="#">This is post title</a>
             </div>
             <div class="description">
-              <?$notes['description'];?>
+              This is description
             </div>
-            <small><?$notes['created_date'];?></small>
+            <small>2021-05-31</small>
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
-          </form>
-        </div>
-        <?php endforeach; ?>
-    </div>
-
-    
-    <div class="notes">
-        <?php foreach($notes as $note){?>
-        <div class="note">
-            <div class="title">
-                <a href="?id=<?php echo $note['id']; ?>"><?php echo $note['title']; ?></a>
-            </div>
-            <div class="description">
-              <?php echo $note['description']; ?>
-            </div>
-            <small><?php echo $note['created_date']; ?></small>
-            <form action="delete.php" method="post">
-              <input type="hidden" name="id" value="<?php echo $note['id']; ?>">
-            <button class="close">X</button>
             </form>
         </div>
-        <?php } ?>
     </div>
-    
-  </div>
+</div>
 </body>
 </html>
