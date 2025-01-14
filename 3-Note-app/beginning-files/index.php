@@ -30,22 +30,7 @@ print_r($notes);
           New Note
         </button>
     </form>
-    <div class="notes">
-      <? foreach($notes as $b): ?>
-        <div class="note">
-            <div class="title">
-              <a><?echo $b['title'];?></a>
-            </div>
-            <div class="description">
-              <? echo $b['description'];?>
-            </div>
-            <small><? echo $b['created_date'];?> </small>
-            <form action="delete.php" method="post">
-              <input type="hidden" name="id" value="">
-            <button class="close">X</button>
-          </form>
-          </div>
-          <? endforeach; ?>  
+   
 
     <div class="notes">
         <?php foreach($notes as $T1): ?>
@@ -64,7 +49,23 @@ print_r($notes);
         </div>
         <?php endforeach; ?> 
         
-        
+        <div class="notes">
+      <? foreach($notes as $b): ?>
+        <div class="note">
+            <div class="title">
+              <a><?echo $b['title'];?></a>
+            </div>
+            <div class="description">
+              <? echo $b['description'];?>
+            </div>
+            <small><? echo $b['created_date'];?> </small>
+            <form action="delete.php" method="post">
+              <input type="hidden" name="id" value="">
+            <button class="close">X</button>
+          </form>
+          </div>
+          <? endforeach; ?>  
+
     <div class="notes">
         <?php foreach($notes as $note): ?>
         <div class="note">
