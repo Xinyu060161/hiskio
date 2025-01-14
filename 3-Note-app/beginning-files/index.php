@@ -52,6 +52,7 @@ echo '<pre>',print_r($notes),'<pre>';
             <button class="close">X</button>
           </form>
         </div>
+        <?php endforeach; ?>
     </div>
 
     
