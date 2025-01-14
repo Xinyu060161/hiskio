@@ -31,14 +31,15 @@ print_r($notes);
         </button>
     </form>
     <div class="notes">
+      <?foreach($notes as $T1):?>
         <div class="note">
             <div class="title">
-                <a href="#">This is post title</a>
+                <a href="#"><?$T1['title'] </a>?>
             </div>
             <div class="description">
-              This is description
+              <?$T1['description']?>
             </div>
-            <small>2021-05-31</small>
+            <small><?$T1['created_date']</small?>
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
