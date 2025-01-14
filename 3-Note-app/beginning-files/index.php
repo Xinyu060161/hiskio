@@ -1,10 +1,7 @@
 <?php
 include "./connection.php";
-echo '1'
-di:
-$connection = new connection();
-$notes = $connection getNotes();
-print_r($notes);
+
+//$connection = new connection();
 ?>
 
 <!DOCTYPE html>
