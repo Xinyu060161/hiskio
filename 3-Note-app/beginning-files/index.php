@@ -1,9 +1,9 @@
 <?php
 
 // 開啟錯誤顯示
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 include "./connection.php";
 
@@ -51,7 +51,7 @@ echo '<pre>',print_r($notes),'<pre>';
           </form>
         </div>
     </div>
-    
+
     
     <div class="notes">
         <div class="note">
@@ -68,25 +68,6 @@ echo '<pre>',print_r($notes),'<pre>';
             </form>
         </div>
     </div>
-    
-
-    <div class="notes">
-        <?php foreach($notes as $note): ?>
-        <div class="note">
-            <div class="title">
-                <a href="?id=<?php echo $note['id']; ?>"><?php echo $note['title']; ?></a>
-            </div>
-            <div class="description">
-              <?php echo $note['description']; ?>
-            </div>
-            <small><?php echo $note['created_date']; ?></small>
-            <form action="delete.php" method="post">
-              <input type="hidden" name="id" value="<?php echo $note['id']; ?>">
-            <button class="close">X</button>
-            </form>
-        </div>
-        <?php endforeach; ?>
-
   </div>
 </body>
 </html>
