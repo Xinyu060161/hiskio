@@ -34,7 +34,7 @@ echo '<pre>',print_r($notes),'<pre>';
         </button>
     </form>
     <div class="notes">
-      <? foreach($notes as $nts){ ?>
+      <? foreach($notes[0] as $nts){ ?>
       <div class="note">
         <div class="title">           
                 <?echo 0;
