@@ -37,7 +37,7 @@ echo '<pre>',print_r($notes),'<pre>';
         <div class="note">
             <div class="title">           
               <?foreach($notes as $nts){?>
-              <?if (empty($notes)) {
+              <?if (empty($nts)) {
                 echo "No notes found!";
                 };?>
                 <a href="#"><?echo $nts['title'];?></a>
