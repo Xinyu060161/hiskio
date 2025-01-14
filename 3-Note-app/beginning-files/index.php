@@ -37,6 +37,7 @@ echo '<pre>',print_r($notes),'<pre>';
         <div class="note">
             <div class="title">
             <?foreach($note as $notes){?>
+              <?print_r($notes);?>
                 <a href="#"><?=$notes['title']?></a>
             </div>
             <div class="description">
