@@ -30,15 +30,17 @@ print_r($notes);
           New Note
         </button>
     </form>
+
     <div class="notes">
+    <?php foreach($notes as $note): ?>
         <div class="note">
             <div class="title">
-                <a href="#">This is post title</a>
+                <a href="?id=<?php echo $note['id']; ?>"><?php echo $note['title']; ?></a>
             </div>
             <div class="description">
-              This is description
+            <?php echo $note['description']; ?>
             </div>
-            <small>2021-05-31</small>
+            <small><?php echo $note['created_date'];?></small>
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
