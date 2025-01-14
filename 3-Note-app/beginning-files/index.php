@@ -6,7 +6,8 @@ error_reporting(E_ALL);
 include "./connection.php";
 
 $connection = new connection();
-$notes = $connection;
+$notes = $connection->getNotes('id');
+print_r($notes);
 ?>
 
 <!DOCTYPE html>
