@@ -34,17 +34,15 @@ echo '<pre>',print_r($notes),'<pre>';
         </button>
     </form>
     <div class="notes">
-      <? foreach( $notes as $nts ):?>
+    <?php foreach($notes as $note): ?>
       <div class="note">
         <div class="title">           
-                <?echo 0;
-                  print_r($nts);?>
-                <a href="#"><?=$nts['title'];?></a>
+                <a href="#"><?=$note['title'];?></a>
             </div>
             <div class="description">
               <?$nts['description']?>
             </div>
-            <small><?$nts['created_date']?></small>
+            <small><?$note['created_date']?></small>
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
@@ -70,7 +68,6 @@ echo '<pre>',print_r($notes),'<pre>';
         </div>
         <?php endforeach; ?>
     </div>
-
     
   </div>
 </body>
