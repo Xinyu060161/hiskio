@@ -30,10 +30,12 @@ print_r($notes);
           New Note
         </button>
     </form>
+
     <div class="notes">
+      <?forech( $notes as $note ):?>
         <div class="note">
             <div class="title">
-                <a href="#">This is post title</a>
+                <a href="#"><?$note['title'];?></a>
             </div>
             <div class="description">
               This is description
