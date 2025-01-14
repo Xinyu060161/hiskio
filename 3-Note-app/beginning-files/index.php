@@ -46,8 +46,8 @@ echo '<pre>',print_r($notes),'<pre>';
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
-            <?}?>
-            </form>
+          </form>
+          <?}?>
         </div>
     </div>
 
