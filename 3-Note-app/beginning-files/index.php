@@ -36,9 +36,10 @@ echo '<pre>',print_r($notes),'<pre>';
     <div class="notes">
         <div class="note">
             <div class="title">
-            <?foreach($notes as $nts){?>
+            <?foreach($notes as $nts);
+            {?>
               <?print_r($nts);?>
-                <a href="#"><?=$notes['title'];?></a>
+                <a href="#"><?echo $notes['title'];?></a>
             </div>
             <div class="description">
               <?$note['description']?>
