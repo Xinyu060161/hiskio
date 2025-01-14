@@ -1,7 +1,9 @@
 <?php
 include "./connection.php";
 
-//$connection = new connection();
+$connection = new connection();
+$notes = $connection getNotes();
+print_r($notes);
 ?>
 
 <!DOCTYPE html>
