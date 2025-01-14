@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 include "./connection.php";
 
 $connection = new connection();
-$notes = $connection->getNotes("id");
+$notes = $connection->getNotes();
 echo '<pre>',print_r($notes),'<pre>';
 ?>
 
@@ -38,13 +38,13 @@ echo '<pre>',print_r($notes),'<pre>';
             <div class="title">
             <?foreach($notes as $nts);
             {?>
-              <?print_r($nts);?>
+              <?print_r($ç);?>
                 <a href="#"><?echo $notes['title'];?></a>
             </div>
             <div class="description">
-              <?$note['description']?>
+              <?$ntsts['description']?>
             </div>
-            <small><?$notes['created_date']?></small>
+            <small><?$nts['created_date']?></small>
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
