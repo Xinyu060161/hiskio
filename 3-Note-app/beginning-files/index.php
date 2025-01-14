@@ -33,10 +33,10 @@ echo '<pre>',print_r($notes),'<pre>';
           New Note
         </button>
     </form>
-    <?foreach($notes as $nts){?>
     <div class="notes">
-        <div class="note">
-            <div class="title">           
+      <?php foreach($notes as $nts){?>
+      <div class="note">
+        <div class="title">           
                 <?echo 0;
                   print_r($nts);?>
                 <a href="#"><?echo $nts['title'];?></a>
