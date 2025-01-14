@@ -36,7 +36,7 @@ echo '<pre>',print_r($notes),'<pre>';
 
 
     <div class="notes">
-      <? foreach( $notes as $nts ):?>
+      <? foreach( $notes as $notes ):?>
       <div class="note">
         <div class="title">           
                 <?echo 0;
@@ -44,7 +44,7 @@ echo '<pre>',print_r($notes),'<pre>';
                 <a href="#"><?=$nts['title'];?></a>
             </div>
             <div class="description">
-              <?$nts['description']?>
+              <?$note['description']?>
             </div>
             <small><?$nts['created_date']?></small>
             <form action="delete.php" method="post">
