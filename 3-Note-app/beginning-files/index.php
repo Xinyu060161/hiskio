@@ -34,7 +34,7 @@ echo '<pre>',print_r($notes),'<pre>';
         </button>
     </form>
     <div class="notes">
-      <? foreach($notes[0] as $nts){ ?>
+      <? foreach($notes[0] as $nts)?>
       <div class="note">
         <div class="title">           
                 <?echo 0;
@@ -49,7 +49,6 @@ echo '<pre>',print_r($notes),'<pre>';
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
           </form>
-          <?}?>
         </div>
     </div>
 
