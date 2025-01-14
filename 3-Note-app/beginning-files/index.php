@@ -68,6 +68,7 @@ echo '<pre>',print_r($notes),'<pre>';
             </form>
         </div>
     </div>
+    <?php endforeach; ?>
 
     <div class="notes">
         <?php foreach($notes as $note): ?>
