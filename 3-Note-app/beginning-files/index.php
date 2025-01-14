@@ -38,11 +38,11 @@ echo '<pre>',print_r($notes),'<pre>';
             <div class="title">
             <?foreach($notes as $nts);
             {?>
-              <?print_r($ç);?>
-                <a href="#"><?echo $notes['title'];?></a>
+              <?print_r($notes);?>
+                <a href="#"><?echo $nts['title'];?></a>
             </div>
             <div class="description">
-              <?$ntsts['description']?>
+              <?$nts'description']?>
             </div>
             <small><?$nts['created_date']?></small>
             <form action="delete.php" method="post">
