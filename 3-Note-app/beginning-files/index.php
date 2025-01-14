@@ -33,18 +33,20 @@ echo '<pre>',print_r($notes),'<pre>';
           New Note
         </button>
     </form>
+
+
     <div class="notes">
-    <?php foreach($notes as $note): ?>
+      <? foreach( $notes as $nts ):?>
       <div class="note">
         <div class="title">           
                 <?echo 0;
-                  print_r($note);?>
-                <a href="#"><?=$note['title'];?></a>
+                  print_r($nts);?>
+                <a href="#"><?=$nts['title'];?></a>
             </div>
             <div class="description">
-              <?$note['description'];?>
+              <?$nts['description']?>
             </div>
-            <small><?$note['created_date'];?></small>
+            <small><?$nts['created_date']?></small>
             <form action="delete.php" method="post">
               <input type="hidden" name="id" value="">
             <button class="close">X</button>
