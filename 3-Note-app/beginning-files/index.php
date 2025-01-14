@@ -42,7 +42,7 @@ echo '<pre>',print_r($notes),'<pre>';
                 <a href="#"><?echo $nts['title'];?></a>
             </div>
             <div class="description">
-              <?$nts'description']?>
+              <?$nts['description']?>
             </div>
             <small><?$nts['created_date']?></small>
             <form action="delete.php" method="post">
