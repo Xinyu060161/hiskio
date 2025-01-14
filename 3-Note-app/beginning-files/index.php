@@ -34,7 +34,7 @@ print_r($notes);
       <?foreach($notes as $T1):?>
         <div class="note">
             <div class="title">
-                <a href="#"><?$T1['title'] </a>
+                <a href="#"><?$T1['title'] </a>?>
             </div>
             <div class="description">
               <?$T1['description']?>
@@ -46,6 +46,25 @@ print_r($notes);
             </form>
         </div>
     </div>
+
+    <div class="notes">
+        <?php foreach($notes as $note): ?>
+        <div class="note">
+            <div class="title">
+                <a href="?id=<?php echo $note['id']; ?>"><?php echo $note['title']; ?></a>
+            </div>
+            <div class="description">
+              <?php echo $note['description']; ?>
+            </div>
+            <small><?php echo $note['created_date']; ?></small>
+            <form action="delete.php" method="post">
+              <input type="hidden" name="id" value="<?php echo $note['id']; ?>">
+            <button class="close">X</button>
+            </form>
+        </div>
+        <?php endforeach; ?>   
+
+
 </div>
 </body>
 </html>
