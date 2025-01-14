@@ -55,7 +55,7 @@ echo '<pre>',print_r($notes),'<pre>';
 
     
     <div class="notes">
-        <?php foreach($notes as $note): ?>
+        <?php foreach($notes as $note){?>
         <div class="note">
             <div class="title">
                 <a href="?id=<?php echo $note['id']; ?>"><?php echo $note['title']; ?></a>
@@ -69,7 +69,7 @@ echo '<pre>',print_r($notes),'<pre>';
             <button class="close">X</button>
             </form>
         </div>
-        <?php endforeach; ?>
+        <?php } ?>
     </div>
     
   </div>
