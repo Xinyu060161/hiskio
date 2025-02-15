@@ -1,5 +1,7 @@
 <?php
 
+echo 1;
+die;
 $connection = require_once './Connection.php';
 
 $notes = $connection->getNotes();
