@@ -1,6 +1,9 @@
 <?php
 
-echo "this is PHP";
+
+echo '<pre>',print($_POST),'</pre>'
+// $connection = require_once './Connection.php';
+// $connecttion->addNote();
 
 // // echo '<pre>',print_r($_POST),'</pre>';
 
