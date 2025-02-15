@@ -3,7 +3,7 @@
 echo '<pre>',print($_POST),'</pre>'
 // echo "this is PHP";
 
-// // echo '<pre>',print_r($_POST),'</pre>';
+
 
 // $connection = require_once './Connection.php';
 
