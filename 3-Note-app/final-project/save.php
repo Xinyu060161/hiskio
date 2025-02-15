@@ -1,16 +1,17 @@
 <?php
 
+echo "this is PHP";
 
-// echo '<pre>',print_r($_POST),'</pre>';
+// // echo '<pre>',print_r($_POST),'</pre>';
 
-$connection = require_once './Connection.php';
+// $connection = require_once './Connection.php';
 
-$id = $_POST['id'] ?? "";
+// $id = $_POST['id'] ?? "";
 
-if($id) {
-  $connection->updateNote($id, $_POST);
-} else {
-  $connection->addNote($_POST);
-}
+// if($id) {
+//   $connection->updateNote($id, $_POST);
+// } else {
+//   $connection->addNote($_POST);
+// }
 
-header('Location: index.php');
+// header('Location: index.php');
