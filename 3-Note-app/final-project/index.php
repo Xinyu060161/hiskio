@@ -1,10 +1,11 @@
 <?php
 
 echo 1;
-die;
-$connection = require_once './Connection.php';
 
+$connection = require_once './Connection.php';
+echo 1;
 $notes = $connection->getNotes();
+echo 1;
 
 $currentNote = [
   'id' => '',
@@ -12,6 +13,7 @@ $currentNote = [
   'description' => ''
 ];
 
+echo 1;
 
 if(isset($_GET['id'])) {
   $currentNote = $connection->getNoteByID($_GET['id']);
