@@ -8,9 +8,9 @@ class Connection
   public function __construct()
   {
     $servername = "localhost";
-    $dbname = "2021-hiskio-php-noteapp";
+    $dbname = "HISKio_test2024";
     $username = "root";
-    $password = "root";
+    $password = "";
     try {
       $this->pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
       // set the PDO error mode to exception
