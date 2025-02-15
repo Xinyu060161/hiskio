@@ -23,7 +23,7 @@ class Connection
 
   public function getNotes()
   {
-    $mysqlRequest = "SELECT * FROM note ORDER BY created_date DESC";
+    $mysqlRequest = "SELECT * FROM SQL_test ORDER BY created_date DESC";
     $statement = $this->pdo->prepare($mysqlRequest);
     $statement->execute();
 
