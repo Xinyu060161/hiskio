@@ -1,7 +1,7 @@
 <?php
 
 
-echo '<pre>',print($_POST),'</pre>';
+echo '<pre>',print_r($_POST),'</pre>';
 // $connection = require_once './Connection.php';
 // $connecttion->addNote();
 
