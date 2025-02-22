@@ -1,3 +1,3 @@
 <?
-echo '<pre>', print_r($_POST, true), '</pre>';
+'<pre>', print_r($_POST, true), '</pre>';
 ?>
