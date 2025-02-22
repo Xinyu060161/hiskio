@@ -59,7 +59,7 @@ if(isset($_GET['id'])) {
             </div>
             <small><?php echo $note['created_date']; ?></small>
             <form action="delete.php" method="post">
-              <input type="hidden" name="id" value="<? echo $note['id']?>">
+              <input type="hidden" name="id" value="<?php echo $note['id']?>">
             <button class="close">X</button>
             </form>
         </div>
